@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Simulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="resources">
+        <div>💰 Money: <span id="money">1000</span></div>
+        <div>🏠 Population: <span id="population">50</span></div>
+        <div>⚡ Energy: <span id="energy">100</span></div>
+        <div>🌳 Happiness Level: <span id="happiness">70%</span></div>
+      </div>
+
+      <div class="map">
+        <div class="tile home">🏠</div>
+        <div class="tile empty">1,2</div>
+        <div class="tile fabric">🏭</div>
+        <div class="tile empty">1,4</div>
+        <div class="tile park">🌳</div>
+        <div class="tile empty">1,6</div>
+        <div class="tile home">🏠</div>
+        <div class="tile empty">1,8</div>
+        <div class="tile empty">1,9</div>
+        <div class="tile empty">1,10</div>
+
+        <div class="tile empty">2,1</div>
+        <div class="tile empty">2,2</div>
+        <div class="tile empty">2,3</div>
+        <div class="tile empty">2,4</div>
+        <div class="tile empty">2,5</div>
+        <div class="tile empty">2,6</div>
+        <div class="tile empty">2,7</div>
+        <div class="tile empty">2,8</div>
+        <div class="tile empty">2,9</div>
+        <div class="tile empty">2,10</div>
+
+        <div class="tile empty">3,1</div>
+        <div class="tile empty">3,2</div>
+        <div class="tile empty">3,3</div>
+        <div class="tile empty">3,4</div>
+        <div class="tile empty">3,5</div>
+        <div class="tile empty">3,6</div>
+        <div class="tile empty">3,7</div>
+        <div class="tile empty">3,8</div>
+        <div class="tile empty">3,9</div>
+        <div class="tile empty">3,10</div>
+      </div>
+
+      <div class="actions">
+        <button id="home">🏠 Build House</button>
+        <button id="factory">🏭 Build Factory</button>
+        <button id="park">🌳 Build Park</button>
+        <button>💰 Sell Building</button>
+      </div>
+
+      <div class="info">
+        <h3>Building Information</h3>
+        <p>Select a map tile to see building details.</p>
+        <p>
+          This will display information about the building type, its level,
+          resource consumption and bonuses.
+        </p>
+      </div>
+    </div>
+    <script type="module" src="../dist/main.js"></script>
+  </body>
+</html>

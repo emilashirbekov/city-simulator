@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "resources resources"
+    "map actions"
+    "info info";
+  grid-template-columns: 1fr 250px;
+  grid-template-rows: 60px 1fr 180px;
+  gap: 10px;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.resources {
+  grid-area: resources;
+  background: linear-gradient(90deg, #6b4caf, #9066bb);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.map {
+  grid-area: map;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 3px;
+  background-color: #cfe8ef;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tile {
+  background-color: #bba3d2;
+  border-radius: 5px;
+  border: 1px solid #773e8e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.tile:hover {
+  background-color: #a07fb5;
+  transform: scale(1.05);
+}
+
+.actions {
+  grid-area: actions;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #a74caf;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.actions button:hover {
+  background-color: #7f45a0;
+  transform: scale(1.05);
+}
+
+.info {
+  grid-area: info;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.info h3 {
+  margin-top: 0;
+  color: #7d4caf;
+}
